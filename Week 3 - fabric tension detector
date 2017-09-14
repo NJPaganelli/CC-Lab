@@ -1,0 +1,32 @@
+I am looking to create a system where the Arduino can detect tension in fabric. The larger goal is to be able to automatically determine
+whether a garment is too tight or too loose on any given person. The arduino would determine what areas of the textile are pulling more 
+than others and then give a precise amount by which the section of the garment should be relaxed or adjusted. 
+
+I bought a pull sensor from Adafruit (it won't arrive to me until the weekend) but it is a string of cord that can put our a reading in 
+ohms. By combining the cord with a piece of knit fabric that stretches, I can assign a numerical value to the stretch of the fabric. 
+
+My goal, if I had the right parts, would be to use the pull sensor in the same way we used the light sesnor in class - by having an LED dim
+or brighten based on the tension (when the light is off, there is 0 tension). Here is my code, which is mistly the same from class, but with 
+different numbers for use with the new sensor.
+
+int ledPin = 9;
+int brightness = 0;
+int sensorLow = 2100;
+int sensorHigh = 3500;
+
+void setup() {
+Serial.begin(9600);
+pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+int sensorValue = analogRead(A0);
+Serial.println(brightness);
+brightness = map(sensorValue, sensorLow, sensorHigh, 0, 255);
+analogWrite(ledPin, brightness);
+delay(300);
+}
+
+
+I am not sure I am doing this right, though, because the numbers coming from the pull sensor are in ohms. Do I need to convert this to a 
+voltage in order to be able to manipulate it in code?
