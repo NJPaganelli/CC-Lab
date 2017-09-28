@@ -1,0 +1,26 @@
+My project is meant to incorporate a conductive stretch sensing cord (https://www.adafruit.com/product/519) that would give data to the
+arduino and thus to the LCD screen. I have woven the stretch cord into a swatch of knit fabric, with the purpose of measuring how much the
+fabric has stretched. The arduino would hold code to convert the resistance readings from the stretch cord to length incriments in inches,
+which would be displayed on the LCD. The final result would be able to inform the user of how much tension is in a piece of fabric, and 
+more specifically how much the fabric piece should be alteres or reshaped in order to release that tension.
+
+The larger application here is to automate the process of analyzing fit in garments. We have all experienced the phenomenon of trying to
+put on clothes that don't fit, or standing in front of a dressing room mirror and thinking that something doesn't fit quite right, but
+purchasing it anyway. This system, which I have branded Façonner, would use a more precise and advanced version of my homework set up in
+order to tell the wearer of a compatable garment what exactly is wrong with the fit and how to correct it. 
+
+Currently, in order to custom fit clothing, a trained tailor must analyze the fit and, using subjective desicion making, decide how to 
+expand or contract different areas of the garment to fit the given body. The seamstress and tailor must invest a lot of time to manually
+adjust the garment and also the design in order to create a whole new garment that fits better. 
+
+A user of the Façonner system could wear a fitting garment, perhaps one similar to the "spanx" body contour garment currently on the market.
+This garment would be able to quickly and automatically analyze the persons body and determine the appropriate sizing for the individual
+user; data that could be used for then creating custom fitted clothing.
+
+As for my current project, I have had success in measuing data from a flex sensor and having that correspond to the dimming and brightening
+of an LED. I have encountered trouble when trying to jump from this to the LCD and a conversion of numbers. I have referenced code from
+Top Tech Boy (http://www.toptechboy.com/arduino/lesson-20-arduino-lcd-project-for-measuring-distance-with-ultrasonic-sensor/) about using
+an analog sensor with and LCD, and I have referenced code from instructables (http://www.instructables.com/id/How-to-use-a-Flex-Sensor-Arduino-Tutorial/)
+about the flex sensor, but I've thus far failed to combine the two together to work with my project.
+
+See subsequent upload with video of the working LED/Flex version of the project, as well as photos and videos of the new attempt.
